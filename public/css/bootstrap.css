@@ -5020,7 +5020,7 @@ a.badge:focus {
   font-weight: 200;
 }
 .jumbotron > hr {
-  border-top-color: #d5d5d5;
+  border-top-color: #145646;
 }
 .container .jumbotron,
 .container-fluid .jumbotron {
@@ -5107,7 +5107,7 @@ a.thumbnail.active {
   border-color: #d6e9c6;
 }
 .alert-success hr {
-  border-top-color: #c9e2b3;
+  border-top-color: #145646;
 }
 .alert-success .alert-link {
   color: #2b542c;
@@ -5118,7 +5118,7 @@ a.thumbnail.active {
   border-color: #bce8f1;
 }
 .alert-info hr {
-  border-top-color: #a6e1ec;
+  border-top-color: #145646;
 }
 .alert-info .alert-link {
   color: #245269;
@@ -5129,7 +5129,7 @@ a.thumbnail.active {
   border-color: #faebcc;
 }
 .alert-warning hr {
-  border-top-color: #f7e1b5;
+  border-top-color: #145646;
 }
 .alert-warning .alert-link {
   color: #66512c;
@@ -5140,7 +5140,7 @@ a.thumbnail.active {
   border-color: #ebccd1;
 }
 .alert-danger hr {
-  border-top-color: #e4b9c0;
+  border-top-color: #145646;
 }
 .alert-danger .alert-link {
   color: #843534;

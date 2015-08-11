@@ -1,2 +1,2 @@
 #my portfolio page
-got to malts.heroku.com
+go to maxalt.heroku.com to see my projects

@@ -56,9 +56,6 @@
                         <a class='page-scroll' href="#project">Projects</a>
                     </li>
                     <li>
-                        <a class='page-scroll' href="#about">About</a>
-                    </li>
-                    <li>
                         <a class='page-scroll' href="#contact">Contact</a>
                     </li>
                 </ul>
@@ -73,10 +70,9 @@
 
         <!-- Jumbotron Header -->
         <header class="jumbotron hero-spacer" style='height:500px;' >
-            <h1>A Warm Welcome!</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, ipsam, eligendi, in quo sunt possimus non incidunt odit vero aliquid similique quaerat nam nobis illo aspernatur vitae fugiat numquam repellat.</p>
-            <p><a class="btn btn-primary btn-large">Call to action!</a>
-            </p>
+            <h1>Welcome to my website</h1>
+            <p>I am a front-end and back-end developer with advanced experience with Ruby and mild experience with SQL, Javascript, and Java. To view my recent works, scroll down, otherwise, download my resume.</p>
+					<a class='btn btn-success' href="img/resume.doc" download="max_altshuler_resume.doc">Download my Resume!</a>
         </header>
 			<br><br><h2 id='project'></h2><br>
         <hr style='background-color: #145646;'>
@@ -151,32 +147,32 @@
         </div>
         <!-- /.row -->
 
-			<br><br><h2 id='about'></h2><br>
-        <hr style='background-color: #145646;'>
-			<br><br><br>
-<header class="jumbotron hero-spacer" style='height:500px;' >
-            <h1>A Warm Welcome!</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, ipsam, eligendi, in quo sunt possimus non incidunt odit vero aliquid similique quaerat nam nobis illo aspernatur vitae fugiat numquam repellat.</p>
-            <p><a class="btn btn-primary btn-large">Call to action!</a>
-            </p>
-        </header>
-
 			<br><br><h2 id='contact'></h2><br>
         <hr style='background-color: #145646;'>
 			<br><br><br>
 <header class="jumbotron hero-spacer" style='height:500px;' >
-            <h1>A Warm Welcome!</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, ipsam, eligendi, in quo sunt possimus non incidunt odit vero aliquid similique quaerat nam nobis illo aspernatur vitae fugiat numquam repellat.</p>
+            <h1>Contact Me!</h1>
+						<p>Text Me:</p>
+						<form action='/text' method='POST'>
+							<input style='width:300px' name='returnName' type='text' placeholder='Your Name' required>
+							<br><br>			
+							<input style='width:300px' name='returnNum' type='text' placeholder='Your Phone Number or Email' required>
+							<br><br>
+							<textarea name='body' rows="5" cols="40" style='resize:none' placeholder='Your Message' required></textarea>
+							<br><br>
+							<input class='btn btn-primary' type='submit'>
+						</form>
+<!-- 						<p>Email: </p>
             <p><a class="btn btn-primary btn-large">Call to action!</a>
-            </p>
+            </p> -->
         </header>
 			
 			<br><br>
         <!-- Footer -->
         <footer>
-            <div class="row">
+            <div style='color:white' class="row">
                 <div class="col-lg-12">
-                    <p>Copyright &copy; Your Website 2014</p>
+                    <p>Copyright &copy; Max Altshuler 2015</p>
                 </div>
             </div>
         </footer>

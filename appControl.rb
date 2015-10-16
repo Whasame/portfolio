@@ -5,19 +5,18 @@ Bundler.require
 
 require './models/model.rb'
 
+
 class MyApp < Sinatra::Base
-	@sent = ''
+	
+enable :sessions
+	
 	get '/' do
 		erb :index
 	end
 	
-# 	get '/sent' do
-# 		@sent = ''
-# 		redirect '/'
-# 	end
-	
 	post '/text' do
-		if (params[:returnNum].include? "@") || (params[:returnNum] =~ /\d/)
+		begin
+		if (params[:returnNum].include? "@") || (params[:returnNum].include /\d/) 
 		@body = "Sent From: #{params[:returnName]} (#{params[:returnNum]})
 
 
@@ -38,13 +37,17 @@ class MyApp < Sinatra::Base
 			:body => "#{@body}" 
 		) 
 			puts "Sent message from #{params[:returnName]}"
-@sent = "Your message was sent"
+			session[:sent] = "your message was sent"
+puts session[:sent]
 			redirect '/'
-		end 
-else
-@sent = "your message was not sent"
-redirect '/'
+		end  
+
 end
+rescue
+puts "error"
+redirect '/'
 	end
-	
+ 
+
+end
 end

@@ -157,25 +157,19 @@
       <header class="jumbotron hero-spacer" style='height:575px;'>
         <div class="row">
           <div class="col-lg-12">
-            <h3>Recent Projects</h3>
+            <h1>Contact Me!</h1>
+        		<p>Text Me:</p>
+        		<form action='/text' method='POST'>
+							<input style='width:300px' name='returnName' type='text' placeholder='Your Name' required>
+							<br><br>
+							<input style='width:300px' name='returnNum' type='text' placeholder='Your Phone Number or Email' required>
+							<br><br>
+							<textarea name='body' rows="5" cols="40" style='resize:none' placeholder='Your Message' required></textarea>
+							<br><br>
+							<input class='btn btn-primary' type='submit'>
+        		</form>
           </div>
         </div>
-
-        <h1>Contact Me!</h1>
-        <p>Text Me:</p>
-        <form action='/text' method='POST'>
-          <input style='width:300px' name='returnName' type='text' placeholder='Your Name' required>
-          <br>
-          <br>
-          <input style='width:300px' name='returnNum' type='text' placeholder='Your Phone Number or Email' required>
-          <br>
-          <br>
-          <textarea name='body' rows="5" cols="40" style='resize:none' placeholder='Your Message' required></textarea>
-          <br>
-          <br>
-          <input class='btn btn-primary' type='submit'>
-        </form>
-
       </header>
     </div>
 

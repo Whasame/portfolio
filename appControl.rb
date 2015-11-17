@@ -14,6 +14,14 @@ enable :sessions
 		erb :index
 	end
 	
+	get '/blog' do
+		erb :blog
+	end
+	
+	get '/portfolio' do
+		erb :portfolio
+	end
+	
 	post '/text' do
 		begin
 		if (params[:returnNum].include? "@") || (params[:returnNum].include /\d/) 

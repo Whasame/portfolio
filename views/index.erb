@@ -52,6 +52,9 @@
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav">
+					<li>
+            <a class='page-scroll' href="#story">Short Stories</a>
+          </li>
           <li>
             <a class='page-scroll' href="#project">Projects</a>
           </li>
@@ -74,17 +77,19 @@
       <p>I am a front-end and back-end developer with advanced experience with Ruby and some experience with SQL, Javascript, and Java. To view my recent works, scroll down, otherwise, download my resume.</p>
       <a class='btn btn-success' href="resume.pdf" download="max_altshuler_resume.pdf">Download my Resume!</a>
     </header>
+    <h2 id='story'></h2>
+    <hr style='background-color: #145646;'>
+			
+		<header class="jumbotron hero-spacer" style='height:500px;'>
+      <h1>Short Story Download</h1>
+      <p>I also sometimes write short stories. Click the download button below to check out my latest work</p>
+      <a class='btn btn-success' href="jack-short-story-current.pdf" download="short-story.pdf">Download!</a>
+    </header>
     <h2 id='project'></h2>
     <hr style='background-color: #145646;'>
-
-    <!-- Title -->
-    <div class="container row">
-      <header class="jumbotron hero-spacer" style='height:575px;'>
-        <div class="row">
-          <div class="col-lg-12">
-            <h3>Recent Projects</h3>
-          </div>
-        </div>
+		
+		<header class="jumbotron hero-spacer" style='height:625px;'>
+			<h1>Projects</h1>
         <!-- /.row -->
 
         <!-- Page Features -->
@@ -101,17 +106,14 @@
               </p>
             </div>
           </div>
-        </div>
-				
-
-				
+        </div>		
 
         <div class="text-center col-md-3 col-sm-6 hero-feature">
           <div class="thumbnail" style="min-height:425px;">
-            <img src="http://placekitten.com/800/475" alt="">
+            <img src="img/findmygame.png" alt="" >
             <div class="caption">
               <h3 style="font-size: 1.75vw">Find My Game</h3>
-              <p style="font-size: 1.25vw">Web App to find the perfect game for a user to play based on their inupt</p>
+              <p style="font-size: 1.25vw">Web App to find the perfect game for a user to play based on their input</p>
               <p style="font-size: 1.25vw">
                 <a href="https://github.com/PabiGamito/find_my_game" class="btn btn-primary"><i class="fa fa-github"></i> View on Github </a></p>
               <p> <a href="http://find-my-game.herokuapp.com" class="btn btn-default"><i class="fa fa-eye"></i> View on the Web </a>
@@ -147,18 +149,13 @@
             </div>
           </div>
         </div>
-      </header>
-      <h2 id='contact'></h2>
-      <hr style='background-color: #145646;'>
-    </div>
-    <!-- /.row -->
-
-    <div class="container row">
-      <header class="jumbotron hero-spacer" style='height:575px;'>
-        <div class="row">
-          <div class="col-lg-12">
-            <h1>Contact Me!</h1>
-        		<p>Text Me:</p>
+    </header>
+    <h2 id='contact'></h2>
+    <hr style='background-color: #145646;'>
+		
+		<header class="jumbotron hero-spacer" style='height:500px;'>
+      <h1>Contact me</h1>
+      <p>Text Me:</p>
         		<form action='/text' method='POST'>
 							<input style='width:300px' name='returnName' type='text' placeholder='Your Name' required>
 							<br><br>
@@ -168,10 +165,10 @@
 							<br><br>
 							<input class='btn btn-primary' type='submit'>
         		</form>
-          </div>
-        </div>
-      </header>
-    </div>
+    </header>
+		<h2 id='bottom'></h2>
+    <hr style='background-color: #145646;'>
+		
 
     <!-- Footer -->
     <footer>

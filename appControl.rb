@@ -1,6 +1,7 @@
 require 'mailgun'
 require 'bundler'
 require 'twilio-ruby' 
+require 'mailgun'
 Bundler.require
 
 require './models/model.rb'
